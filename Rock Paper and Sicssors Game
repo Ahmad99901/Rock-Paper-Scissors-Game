@@ -19,12 +19,12 @@ print(Computer_Hand)
 
 if Computer_Hand == Player_Hand:
     print("Its a tie! ")
-elif Computer_Hand > Player_Hand:
-    print("Player Lost! ")
-elif Player_Hand > Computer_Hand:
-    print("Player Wins! ")
 elif Computer_Hand == 0 and Player_Hand == 2:
     print("Player Lost! ")
 elif Player_Hand == 0 and Computer_Hand == 2:
+    print("Player Wins! ")
+elif Computer_Hand > Player_Hand:
+    print("Player Lost! ")
+elif Player_Hand > Computer_Hand:
     print("Player Wins! ")
 
