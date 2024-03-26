@@ -1,0 +1,30 @@
+#Name - Ahmad
+#Date - 03/18/24
+#Project - Rock, Paper, Scissors
+
+#Library were using for the game
+import random
+
+#Int to make sure the input is a whole number
+Player_Hand = int(input("Rock (1), Paper (2), or Scissors(3)? Enter the number: "))
+
+#Conditionals so Player cannot input outside of the required ranged numbers
+if Player_Hand >= 4 or Player_Hand < 1:
+    print("Invalid input! ")
+
+Computer_Hand = random.randint(1,3)
+print("Computer chose: ")
+print(Computer_Hand) 
+
+
+if Computer_Hand == Player_Hand:
+    print("Its a tie! ")
+elif Computer_Hand > Player_Hand:
+    print("Player Lost! ")
+elif Player_Hand > Computer_Hand:
+    print("Player Wins! ")
+elif Computer_Hand == 0 and Player_Hand == 2:
+    print("Player Lost! ")
+elif Player_Hand == 0 and Computer_Hand == 2:
+    print("Player Wins! ")
+
